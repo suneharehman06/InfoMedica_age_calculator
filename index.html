@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+	<meta charset="utf-8" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<title>Your Age on Other Worlds</title>
+	<link rel="stylesheet" type="text/css" href="age.css">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="age.js">
+	</script>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KQZNKT');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQZNKT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="intro">
+	<h1 class="headingInfoMedica"><br><br>
+		InfoMedica<br><h2>YOUR AGE ON OTHER WORLDS</h2>
+	</h1>
+	<h3>
+		Guess how old you are in different planets in our solar system!
+	</h3>
+	<h5>Be one with the Universe. You belong here.. An effort to raise awareness and instill curiosity</h5>
+</div>
+<noscript>
+	<div class="js-required">
+		<hr>
+		<hr>
+	</div>
+</noscript>
+<form method="POST">
+	<div id="birthdate" class="fancytype">
+<!-- <img src="images/enter_age.gif" width="276" height="26" > -->
+<br><br><br>
+		ENTER YOUR BIRTHDATE HERE &rarr; <label for="month">MONTH</label> 
+		<input type="text" name="month" size="5" placeholder="MM" tabindex="1" style="font-size: 10pt" >
+		<label for="day">DAY</label> 
+		<input type="text" name="day" size="5" placeholder="DD" tabindex="2"style="font-size: 10pt">
+		<label for="year">YEAR</label> 
+		<input type="text" name="year" size="5" placeholder="YYYY" tabindex="3"style="font-size: 10pt">
+		<br><br>
+		<input type="button" value="Calculate" style="font-size: 12pt" onclick="compute_age(this.form)">
+		<input type="reset" value="Clear" style="font-size: 12pt">
+	</div>
+	<hr>
+	<div id="milkyway">
+		<div class="planet">
+			<h4>
+				MERCURY
+			</h4>
+			<a href="http://www.nineplanets.org/mercury.html"><img src="images/mercury.gif" width="100" height="100" alt="Mercury"></a> <br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputmrcday" size="7">
+				<label for="outputmrcday">Mercurian days</label><br>
+				<input type="text" name="outputmrcyear" size="7">
+				<label for="outputmrcyear">Mercurian years</label> 
+			</div>
+			<label for="outputmrcbday">Next Birthday</label><br>
+			<input type="text" name="outputmrcbday" size="20">
+		</div>
+		<div class="planet">
+			<h4>
+				VENUS
+			</h4>
+			<a href="http://www.nineplanets.org/venus.html"><img src="images/venus.gif" width="100" height="100" alt="Venus"></a> <br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputvnday" size="7">
+				<label for="outputvnday">Venusian days</label><br>
+				<input type="text" name="outputvnyear" size="7">
+				<label for="outputvnyear">Venusian years</label> 
+			</div>
+			<label for="outputvnbday">Next Birthday</label><br>
+			<input type="text" name="outputvnbday" size="20">
+		</div>
+		<div class="planet">
+			<h4>
+				EARTH
+			</h4>
+			<a href="http://www.nineplanets.org/earth.html"><img src="images/earth.gif" width="100" height="100" alt="Earth"></a> <br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputearthday" size="7">
+				<label for="outputearthday">Earth days</label><br>
+				<input type="text" name="outputearthyear" size="7">
+				<label for="outputearthyear">Earth years</label> 
+			</div>
+			<label for="outputearthbday">Next Birthday</label><br>
+			<input type="text" name="outputearthbday" size="20">
+		</div>
+		<div class="planet">
+			<h4>
+				MARS
+			</h4>
+			<a href="http://www.nineplanets.org/mars.html"><img src="images/mars.gif" width="100" height="100" alt="Mars"></a><br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputmarsday" size="7">
+				<label for="outputmarsday">Martian days</label><br>
+				<input type="text" name="outputmarsyear" size="7">
+				<label for="outputmarsyear">Martian years</label> 
+			</div>
+			<label for="outputmarsbday">Next Birthday </label>
+			<input type="text" name="outputmarsbday" size="20">
+		</div>
+		<div class="planet">
+			<h4>
+				JUPITER
+			</h4>
+			<a href="http://www.nineplanets.org/jupiter.html"><img src="images/jupiter.gif" width="100" height="100" alt="Jupiter"></a><br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputjupday" size="8">
+				<label for="outputjupday">Jovian days</label><br>
+				<input type="text" name="outputjupyear" size="8">
+				<label for="outputjupyear">Jovian years</label> 
+			</div>
+			<label for="outputjupbday">Next Birthday</label><br>
+			<input type="text" name="outputjupbday" size="20">
+		</div>
+		<div class="planet">
+			<h4>
+				SATURN
+			</h4>
+			<a href="http://www.nineplanets.org/saturn.html"><img src="images/saturn.gif" width="100" height="100" alt="Saturn"></a><br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputsatday" size="8">
+				<label for="outputsatday">Saturnian days</label><br>
+				<input type="text" name="outputsatyear" size="8">
+				<label for="outputsatyear">Saturnian years</label> 
+			</div>
+			<label for="outputsatbday">Next Birthday</label><br>
+			<input type="text" name="outputsatbday" size="20">
+		</div>
+		<div class="planet">
+			<h4>
+				URANUS
+			</h4>
+			<a href="http://www.nineplanets.org/uranus.html"><img src="images/uranus.gif" width="100" height="100" alt="Uranus"></a><br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputurday" size="8">
+				<label for="outputurday">Uranian days</label><br>
+				<input type="text" name="outputuryear" size="8">
+				<label for="outputuryear">Uranian years</label> 
+			</div>
+			<label for="outputurbday">Next Birthday</label><br>
+			<input type="text" name="outputurbday" size="20">
+		</div>
+		<div class="planet">
+			<h4>
+				NEPTUNE
+			</h4>
+			<a href="http://www.nineplanets.org/neptune.html"><img src="images/neptune.gif" width="100" height="100" alt="Neptune"></a><br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputnepday" size="8">
+				<label for="outputnepday">Neptunian days</label><br>
+				<input type="text" name="outputnepyear" size="8">
+				<label for="outputnepyear">Neptunian years</label> 
+			</div>
+			<label for="outputnepbday">Next Birthday</label><br>
+			<input type="text" name="outputnepbday" size="20">
+		</div>
+		<div class="planet">
+			<h4>
+				PLUTO
+			</h4>
+			<a href="http://www.nineplanets.org/pluto.html"><img src="images/pluto.gif" width="100" height="100" alt="Pluto"></a><br>
+			Your age is 
+			<div class="ageyear">
+				<input type="text" name="outputpltday" size="7">
+				<label for="outputpltday">Plutonian days</label><br>
+				<input type="text" name="outputpltyear" size="7">
+				<label for="outputpltyear">Plutonian years</label> 
+			</div>
+			<label for="outputpltbday">Next Birthday</label><br>
+			<input type="text" name="outputpltbday" size="20">
+		</div>
+	</div>
+</form>
+
+					
+							
+							&copy;2020 Suneha Fathima Rafeena. All rights reserved.
+													
+</body>
+
+</html>
